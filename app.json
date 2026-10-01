@@ -5,21 +5,43 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "userInterfaceStyle": "dark"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0A1020",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "userInterfaceStyle": "dark",
+      "package": "com.anonymous.TalkCraft"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-sqlite"
+    ],
+    "scheme": "talkcraft",
+    "backgroundColor": "#0A1020",
+    "extra": {
+      "revenuecat": {
+        "iosApiKey": "REPLACE_WITH_REVENUECAT_IOS_PUBLIC_SDK_KEY",
+        "androidApiKey": "REPLACE_WITH_REVENUECAT_ANDROID_PUBLIC_SDK_KEY",
+        "entitlementId": "talkcraft_pro",
+        "offeringId": "REPLACE_WITH_REVENUECAT_OFFERING_ID_OPTIONAL"
+      },
+      "router": {},
+      "eas": {
+        "projectId": "c797efda-105a-400d-9e5f-c5e49b413f53"
+      }
     }
   }
 }
